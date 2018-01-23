@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+#container{
+  
+}
+
+body{
+    background-color: #FFEFCE;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(97, 52, 52);
+    color: white;
+    text-align: center;
+ }

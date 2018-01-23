@@ -1,0 +1,28 @@
+
+
+
+<header>
+    <nav>
+
+            <div class="logo-section">
+                    <a class="logo">Djmosra</a>
+                    <button class="hb-button"><i class="fa fa-bars"></i></button>
+                </div>
+ <ul >
+   
+   
+        <li *ngIf="!userService.loggedin()" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a routerLink="registre">Registre</a></li>
+    
+        <li *ngIf="!userService.loggedin()" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a routerLink="login">Login</a></li>
+        <li *ngIf="userService.loggedin()" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a (click)="onLogout()" href="#">Logout</a></li>
+       
+        <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a class="active" routerLink="">Home</a></li>
+        <li *ngIf="userService.loggedin()" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a routerLink="profile">Profile</a></li>
+        <li *ngIf="userService.loggedin()" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a routerLink="admin">Dashboard</a></li>
+        
+    
+</ul>
+</nav>
+</header>
+  
+
